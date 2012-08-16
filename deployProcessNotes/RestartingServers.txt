@@ -1,0 +1,32 @@
+Instructions on restarting servers (ConceptGen, LRPath, Rserve)
+
+Tomcat Servers... each is restarted with
+sudo /sbin/service $tomcatName stop
+sudo /sbin/service $tomcatName start
+    
+ConceptGen (Prod)
+ssh username@ncibi-tcprod.bicc.med.umich.edu
+tomcatName = tomcat
+
+ConceptGen & LRPath (test)
+ssh username@ncibi-tcbeta.bicc.med.umich.edu
+tomcatName = tomcat
+
+Mimi
+
+
+Rserve (Prod)
+
+ssh username@ncibi-analysis.bicc.med.umich.edu
+/sbin/service rserv stop
+/sbin/service rserv start
+
+Interactive
+R CMD rserv.dbg
+
+Rserve (Test)
+
+ssh username@ncibi-cptgen.bicc.med.umich.edu
+/sbin/service rserv stop
+/sbin/service rserv start
+

@@ -1,0 +1,33 @@
+0) Background
+
+	This process assumes that you are working in a unix environment: the Mac, cygwin (on Windows), or 
+	some other *nix OS. It is assumed that an svn client and Maven are installed. The last version of the
+	scripts were run using svn version 1.6.6 and Maven version 3.0.3. The scripts are written for bash.
+
+	MetScape depends on a number of other NCIBI projects, these are listed in various places in the
+	scripts that follow. For completeness, aside from metscape2-plugin, itself they are: 
+	metab-ws-client, metab-ws-common, metab-ws-server, ncibi-commons, ncibi-db, ncibi-webbackend,
+	ws-client, ws-common, ws-ncibi, ws-ncibi-client, ws-ncibi-common, ws-ncibi-executor, ws-server-common
+
+	These notes assume that all of these projects have been updated to trunk, and that the trunk,
+	configuration of the MetScape plugin is using those trunk versions of the associated projects.
+	
+	These notes rely on a number of scripts for articulation of details. See the folder 'scripts' for
+	those scripts.
+	
+	Running the scripts for install depends on having set up the build and pdeploy commands. 
+	Separate documentation is supplied for that.
+	
+1) Create branches for all the associated projects.
+	See the script 'generateAllBranchCommands.sh' in the 'scripts' folder.
+	Edit this script; generate and run the commands.
+	Note: I did not have the script run the commands because the process has proven fragile enough
+		that it requires running the commands separately
+		
+2) Checkout the branches. See the script: checkoutAllBranches.sh.
+
+3) Build and install all the projects creating pbuild modules where needed. See the script: buildBranches.sh.
+Noe: the build script also does an update, but if the code changes and you only need to do an update, see the
+script: updateAllBranches.sh
+
+4) Deploy the pdeploy modules on the server: for each module copy to the server and run the pdeploy command.

@@ -1,0 +1,3 @@
+Build and insert the jar file in this folder.
+User this name (links depend on it):
+MetscapePlugin2-0Beta.jar

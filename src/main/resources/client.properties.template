@@ -1,0 +1,20 @@
+#*************************************************************************
+#* Copyright 2012 Regents of the University of Michigan 
+#* see Copyright.txt elsewhere in this project
+# ******************************************************************/
+# Specify an alternate url for the base metabws server
+# if client.properties is missing, or not server.url is specified...
+# the default server.url is used;
+# see - org.ncibi.metab.ws.client.ServerUrlConfiguration
+# in this project
+# -----
+# metab.server.url=http://mimitest.ncibi.org/metabwsdisease
+# ncibi.server.url=http://mimitest.ncibi.org/ncibiws
+# metab.server.url=http://localhost:8080/metabwsdisease
+# metab.server.url=http://localhost:8090/metabwsdisease
+
+metab.server.url=http://mimitest.ncibi.org/metabws
+ncibi.server.url=http://mimitest.ncibi.org/ncibiws
+
+# metab.server.url=http://localhost:8080/metabws
+# ncibi.server.url=http://localhost:8080/ncibiws
