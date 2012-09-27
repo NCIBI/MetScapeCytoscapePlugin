@@ -1,4 +1,4 @@
-THe MimiPlugin for Cytoscape
+THe MetScape Plugin for Cytoscape
 ===================
 
 The Cytoscape plugin for the NCIBI metabolimics data (see http://metscape.ncibi.org/metscape2)
