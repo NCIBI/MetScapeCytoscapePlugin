@@ -3,4 +3,6 @@ target-eclipse
 .classpath
 .settings
 .project
+build.properties
+src/main/resources/client.properties
 
