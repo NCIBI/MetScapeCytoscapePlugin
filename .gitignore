@@ -5,4 +5,4 @@ target-eclipse
 .project
 build.properties
 src/main/resources/client.properties
-
+.buildpath
